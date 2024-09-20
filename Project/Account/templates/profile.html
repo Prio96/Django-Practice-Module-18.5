@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Hi {{user}}</h2>
+<a class="btn btn-sm btn-primary" href="{% url 'ChangePass' %}">Change your password(With old password)</a><br><br>   
+<a class="btn btn-sm btn-primary" href="{% url 'ChangePassWOOldPass' %}">Change your password(Without old password)</a>    
+{% endblock content %}
